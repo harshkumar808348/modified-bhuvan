@@ -1,0 +1,226 @@
+/* Common styles for navbar and nav elements */
+
+
+.hidden {
+  top: -100px; /* Adjust this value based on the navbar height */
+  /* Other styles to completely hide the navbar */
+}
+.boxing{
+  width: 100vw;
+  padding: 0px;
+  z-index: 1000;
+  transition: top 0.3s;
+ position: fixed;
+  /* Positioned at the top of the viewport */
+  left: 0;
+ 
+} */
+
+.navbar {
+ /* Keeps the navbar fixed in its position */
+ /* Aligns the navbar to the left edge of the viewport */
+  width: 100%; /* Makes the navbar take the full width of the viewport */
+  background-color:#000021;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 4px #000021;
+  z-index: 1000; /* Ensures it's on top of other elements */
+}
+
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2px; /* Adjust padding as needed */
+  margin: 0px;
+}
+
+.search-input {
+  padding: 10px;
+  border: cornsilk;
+  outline: none;
+  
+  font-size: 16px;
+  width: 500px; /* Adjust width as needed */
+
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.search-input:focus {
+  background-color: #ddd;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: #000021;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: pink;
+}
+
+/* Ensure that the navbar elements don't have excessive padding or margin */
+.navbar-item {
+  padding: 10px; /* Example: Reduce padding if necessary */
+  margin: 0 5px; /* Example: Reduce margin if necessary */
+}
+
+
+/* Dark background when input is focused */
+
+
+
+
+
+
+/* Your Navbar styles here */
+.header {
+  background-color: white;
+
+}
+
+.nav-list li a:hover {
+  color: white; /* Change color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.nav-list {
+  background-color :#000021;
+  
+  
+  margin: 0;
+  padding: 10px;
+  margin-top: 0px;
+  border-radius: 10px;
+  
+}
+
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  position: relative;
+  transform: skewX(-20deg);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list li a::after {
+  content: '';
+  
+  position: absolute;
+  width: 100%;
+  height: 5px;
+
+  bottom: -4px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-list li a:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+/* .navbar{
+  width: 100vw;
+} */
+
+/* Logo */
+.logo-container {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start; /* Align items at the start */
+  align-items: center; /* Center vertically */
+  height: 90px; /* Set a specific height for the container */
+  /* Additional styling for the container if needed */
+}
+
+.logo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  cursor: pointer;
+  /* Additional styling for the logo if needed */
+}
+
+
+
+
+
+/* Search box */
+
+
+
+
+
+
+/* Navigation links */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Change link text color */
+}
+
+nav ul li a:hover {
+  color: #007bff; /* Change link text color on hover */
+}
+
+/* Nav-items */
+.nav-items {
+  font-family: Arial, sans-serif;
+}
+
+.nav-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items li {
+  /* margin: 15px; */
+  /* padding: 50px 12px;
+  border-radius: 20px; */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-items li:hover {
+  background-color: greenyellow /* Adjust the color to your preference */
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-items li a:hover {
+  color: green;
+}

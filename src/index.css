@@ -1,0 +1,46 @@
+
+/* Reset default styles for all elements */
+
+/* Body styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 33); /* Dark blue background color */
+  color: #ffffff; /* White text color */
+  background-image: url('./assets//background2].jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: background-move 20s linear infinite; /* Adjust animation duration */
+
+  /* For better performance, use vendor prefixes */
+  -webkit-animation: background-move 20s linear infinite;
+  -moz-animation: background-move 20s linear infinite;
+  -o-animation: background-move 20s linear infinite;
+  -ms-animation: background-move 20s linear infinite;
+}
+
+@keyframes background-move {
+  from {
+    background-position: center top;
+  }
+  to {
+    background-position: center bottom;
+  }
+}
+
+
+/* Your animation for the background movement */
+@keyframes background-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%; /* Move background to bottom right */
+  }
+}
+
+
+
+
